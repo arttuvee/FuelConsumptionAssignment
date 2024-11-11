@@ -1,6 +1,7 @@
 package org.example.fuelconsumption;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -23,6 +24,8 @@ public class FuelCalculatorController {
     private Label fuelLabel;
     @FXML
     private Label distanceLabel;
+    @FXML
+    private Button calculateButton;
 
     private ResourceBundle bundle;
     private NumberFormat numberFormat;
@@ -49,6 +52,7 @@ public class FuelCalculatorController {
         fuelLabel.setText(bundle.getString("fuel.label"));
         distanceLabel.setText(bundle.getString("distance.label"));
         resultLabel.setText("");
+        calculateButton.setText(bundle.getString("calculate.button"));
     }
 
     @FXML
