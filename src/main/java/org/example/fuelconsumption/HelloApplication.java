@@ -16,7 +16,7 @@ public class HelloApplication extends Application {
         ResourceBundle bundle = ResourceBundle.getBundle("messages");
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fuel-calculator-view.fxml"), bundle);
         Scene scene = new Scene(fxmlLoader.load(), 320, 320);
-        stage.setTitle("Amir Dirin!");
+        stage.setTitle("Arttu Voutilainen!");
         stage.setScene(scene);
         stage.show();
     }
